@@ -141,7 +141,8 @@ int main() {
                     cout << "Masukkan Stok Produk baru: ";
                     cin >> perangkatJaringan[pilihIndex].stok;
                     cout << "Produk bawaan berhasil diupdate!\n";
-                } else if (pilihIndex >= perangkatJaringan.size() && pilihIndex < perangkatJaringan.size() + produkList.size()) {
+                } else 
+                if (pilihIndex >= perangkatJaringan.size() && pilihIndex < perangkatJaringan.size() + produkList.size()) {
                     int produkIndex = pilihIndex - perangkatJaringan.size();
                     cout << "Masukkan Nama Produk baru: ";
                     getline(cin, produkList[produkIndex].nama);
